@@ -1,8 +1,8 @@
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import Home from './pages/home'
-import About from './pages/about'
-import Vans from './pages/vans'
+import Home from './src/pages/home'
+import About from './src/pages/about'
+import Vans from './src/pages/vans'
 
 function App() {
 
