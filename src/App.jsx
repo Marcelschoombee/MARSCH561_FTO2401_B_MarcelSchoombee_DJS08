@@ -6,15 +6,18 @@ import Vans from './pages/vans/vans'
 import VanDetail from './pages/vans/vandetials'
 import Layout from './components/layout'
 import Dashboard from './pages/host/dashboard'
-import Income from './pages/host/income'
-import Reviews from './pages/host/reviews'
+import Income from './pages/host/Income'
+import Reviews from './pages/host/Reviews'
 import HostLayout from './components/hostlayout'
 import HostVans from './pages/host/hostvans'
 import HostVansDetail from './pages/host/hostvandetail'
 import HostVanInfo from './pages/host/hostvaninfo'
 import HostVanPhotos from './pages/host/hostvanphotos'
 import HostVanPricing from './pages/host/hostvanpricing'
+import AuthRequired from "./components/AuthRequired"
 import NotFound from './pages/NotFound'
+
+import "../server"
 
 function App() {
 
