@@ -14,10 +14,8 @@ import HostVansDetail from './pages/host/hostvandetail'
 import HostVanInfo from './pages/host/hostvaninfo'
 import HostVanPhotos from './pages/host/hostvanphotos'
 import HostVanPricing from './pages/host/hostvanpricing'
-import AuthRequired from "./components/AuthRequired"
 import NotFound from './pages/NotFound'
 
-import "../server"
 
 function App() {
 

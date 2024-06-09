@@ -1,4 +1,5 @@
-import { initializeApp } from "firebase/app"
+
+import { initializeApp } from 'firebase/app';
 import {
     getFirestore,
     collection,
@@ -6,20 +7,21 @@ import {
     getDocs,
     getDoc,
     query,
-    where,
-    documentId
+    where
 } from "firebase/firestore/lite"
 
+
 const firebaseConfig = {
-    apiKey: "AIzaSyD_k3v3HK3tKEqhlqFHPkwogW7PqEqhGhk",
-    authDomain: "vanlife-a1af5.firebaseapp.com",
-    projectId: "vanlife-a1af5",
-    storageBucket: "vanlife-a1af5.appspot.com",
-    messagingSenderId: "803007000356",
-    appId: "1:803007000356:web:446cd3a1ca406839258db1"
+    apiKey: "AIzaSyA903qJHADH0BVgUzJJKaYP6ydd1k3RvHE",
+    authDomain: "vanlife-d5f6a.firebaseapp.com",
+    projectId: "vanlife-d5f6a",
+    storageBucket: "vanlife-d5f6a.appspot.com",
+    messagingSenderId: "574548169655",
+    appId: "1:574548169655:web:cf380f0e258ca6c97b8e32"
 };
 
-const app = initializeApp(firebaseConfig)
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 
 // Refactoring the fetching functions below
@@ -52,6 +54,7 @@ export async function getHostVans() {
     }))
     return vans
 }
+
 
 
 export async function loginUser(creds) {

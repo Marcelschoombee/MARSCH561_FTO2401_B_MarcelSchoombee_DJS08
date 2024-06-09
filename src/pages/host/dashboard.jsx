@@ -1,8 +1,8 @@
 
 import React from "react"
 import { Link } from "react-router-dom"
-import { BsStarFill } from "react-icons/bs"
-import { getHostVans } from "../api"
+
+import { getHostVans } from "../../api"
 
 export default function Dashboard() {
     const [vans, setVans] = React.useState([])
@@ -35,9 +35,7 @@ export default function Dashboard() {
         )
     }
 
-    // if (loading) {
-    //     return <h1>Loading...</h1>
-    // }
+    
 
     if (error) {
         return <h1>Error: {error.message}</h1>
@@ -77,9 +75,7 @@ export default function Dashboard() {
                         </>
                     )
                 }
-                {/*<React.Suspense fallback={<h3>Loading...</h3>}>
-                    <Await resolve={loaderData.vans}>{renderVanElements}</Await>
-                </React.Suspense>*/}
+                
             </section>
         </>
     )
