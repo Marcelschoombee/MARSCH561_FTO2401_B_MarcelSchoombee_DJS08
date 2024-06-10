@@ -1,5 +1,4 @@
-
-import React from "react"
+import React from 'react'
 import { Link } from "react-router-dom"
 
 import { getHostVans } from "../../api"
@@ -35,8 +34,6 @@ export default function Dashboard() {
         )
     }
 
-    
-
     if (error) {
         return <h1>Error: {error.message}</h1>
     }
@@ -54,7 +51,7 @@ export default function Dashboard() {
             <section className="host-dashboard-reviews">
                 <h2>Review score</h2>
 
-                <BsStarFill className="star" />
+            
 
                 <p>
                     <span>5.0</span>/5
@@ -75,7 +72,7 @@ export default function Dashboard() {
                         </>
                     )
                 }
-                
+             
             </section>
         </>
     )

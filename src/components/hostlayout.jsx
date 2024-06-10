@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from "react-router-dom"
 
 export default function HostLayout() {
     const activeStyles = {
@@ -8,24 +8,39 @@ export default function HostLayout() {
     }
 
     return (
-        <nav className="host-nav">
-            <NavLink to="."
+        <>
+            <nav className="host-nav">
+                <NavLink
+                    to="."
                     end
-                 style={({ isActive }) => isActive ? activeStyles : null}
-            >Dashboard</NavLink>
-            <NavLink to="income"
-                 style={({ isActive }) => isActive ? activeStyles : null}
-            >Income</NavLink>
-            <NavLink to="reviews"
-                 style={({ isActive }) => isActive ? activeStyles : null}
-            >Reviews</NavLink>
-            <Outlet />
-            <NavLink to="vans"
-                 style={({ isActive }) => isActive ? activeStyles : null}
-            >Vans</NavLink>
-            <Outlet />
-        </nav>
-        
-    )
+                    style={({ isActive }) => isActive ? activeStyles : null}
+                >
+                    Dashboard
+                </NavLink>
 
+                <NavLink
+                    to="income"
+                    style={({ isActive }) => isActive ? activeStyles : null}
+                >
+                    Income
+                </NavLink>
+                
+                <NavLink
+                    to="vans"
+                    style={({ isActive }) => isActive ? activeStyles : null}
+                >
+                    Vans
+                </NavLink>
+
+                <NavLink
+                    to="reviews"
+                    style={({ isActive }) => isActive ? activeStyles : null}
+                >
+                    Reviews
+                </NavLink>
+
+            </nav>
+            <Outlet />
+        </>
+    )
 }
